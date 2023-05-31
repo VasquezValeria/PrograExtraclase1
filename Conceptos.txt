@@ -1,0 +1,27 @@
+Conceptos Git
+
+git merge une ciertas o varias secuencias de confirmaciones en un historial de distintas personas que contribuyen en un especifico trabajo. 
+El uso mas frecuente de git merge es para combinar dos ramas. En estos casos, git merge toma dos punteros de confirmación, normalmente los extremos de la rama,
+y encuentra una confirmación base común entre ellos. Una vez que Git encuentra una confirmación base en común, crea una "confirmación de fusión" nueva que combina
+los cambios de cada secuencia de confirmación de fusión puesta en cola.
+
+git push su función es cargar contenido del repositorio local a un repositorio remoto.
+El envío es la forma de transferir confirmaciones desde tu repositorio local a un repositorio remoto,
+un ejemplo de ello es un repositorio creado en GitHub y luego clonado en Visual Studio.  
+Después de modificar el repositorio local, se ejecuta un envío para compartir las modificaciones con los miembros remotos del equipo.
+
+git add añade un cambio del directorio de trabajo en el entorno de ensayo. De este modo, indica a Git que quieres incluir actualizaciones en un archivo.
+Sin embargo, git add no afecta al repositorio de manera significativa: en realidad, los cambios no se registran hasta que ejecutas git commit.
+
+git commit este comando los cambios realizados en el proyecto en ese preciso momento. Antes de ejecutar git commit,
+se utiliza el comando git add para pasar o "preparar" los cambios en el proyecto que se almacenarán en una confirmación.
+Estos dos comandos, git commit y git add, son dos de los comandos mas utilizados.
+
+git fetch descarga commits(cambios), archivos y referencias de un repositorio remoto a tu repositorio local. Esta acción la llevas a cabo cuando quieres ver en qué han estado trabajando los demás.
+
+git pull se usa para extraer y descargar contenido desde un repositorio remoto y actualizar al instante el repositorio local para reflejar ese contenido.
+En realidad es una combinación de dos comandos, git fetch y git merge. Este comando ejecuta en primer lugar git fetch,
+que descarga el contenido del repositorio remoto especificado. Después, se ejecuta git merge para fusionar las referencias y los 
+encabezados del contenido remoto en una nueva confirmación de fusión local.
+
+git checkout  toma contenido recuperado, esto permite que la recuperación constituya una forma segura de revisar commits antes de integrarlos en tu repositorio local.
