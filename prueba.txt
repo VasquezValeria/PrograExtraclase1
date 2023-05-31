@@ -1,1 +1,0 @@
-Esto es una prueba inicial de commit en la branch main
